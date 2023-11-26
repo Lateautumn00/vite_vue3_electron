@@ -1,6 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-	<div class="common-layout">dddd</div>
+	<div class="common-layout">
+		<el-button @click="console.log('999')">点击</el-button>
+	</div>
 </template>
 <script setup lang="ts"></script>
 <style scoped lang="scss">
