@@ -4,12 +4,10 @@
     </div>
   </template>
   
-  <script lang="ts">
+  <script setup lang="ts">
   import { ref } from 'vue'
-  
   const r=ref('123')
-
-    console.log(r)
+  console.log(r)
   </script>
   <style scoped lang="scss">
   .el-header {

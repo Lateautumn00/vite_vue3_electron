@@ -4,14 +4,11 @@ import {
     createWebHistory,
     RouteRecordRaw
   } from 'vue-router'
-  //import Home from '../views/FrameHome.vue' //原始边框路由
-  import Home from '../views/Home.vue' //无边框路由
-  
   const routes: Array<RouteRecordRaw> = [
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: ()=> import('../views/Home.vue')
     }
     //   {
     //     path: '/about',
