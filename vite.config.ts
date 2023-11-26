@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import electron from 'vite-plugin-electron'
 import electronRender from 'vite-plugin-electron-renderer'
 import { resolve } from 'path'
+import eslintPlugin from 'vite-plugin-eslint';
 // https://vitejs.dev/config/
 export default defineConfig({
   envDir: "./viteEnv",
@@ -17,7 +18,10 @@ export default defineConfig({
     electron({
       entry:'electron/main.ts'
     }),
-    electronRender()
+    electronRender(),
+    eslintPlugin({
+			include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.ts', 'src/*.vue','electron/**/*.ts'],
+		})
   ],
   resolve:{
     //别名

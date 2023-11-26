@@ -1,4 +1,23 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite5 
+
+基于node v20.10.0
+
+npm install
+安装 内容
+vue3
+typescript
+vite5
+axios
+pinia
+element-plus
+vue-router
+electron
+electron-build
+electron-updater
+sass
+eslint
+Prettier
+区分开发、测试环境配置
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 

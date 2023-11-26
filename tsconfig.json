@@ -9,8 +9,8 @@
     /* 路径 */
     "paths":{
       "@/*":["src/*"],
-      "components":["src/components/*"],
-      "_pinia/*":["src/pinia"]
+      "components/*":["src/components/*"],
+      "_pinia/*":["src/pinia/*"]
     },
     /* Bundler mode */
     "moduleResolution": "node",
@@ -26,6 +26,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue","typings/**/*.d.ts","electron/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue","electron/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

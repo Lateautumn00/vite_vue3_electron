@@ -31,7 +31,7 @@ const createWindow=()=>{
     win.webContents.openDevTools()
   } else {
     win.loadFile('dist/index.html')
-    win.webContents.openDevTools()
+    win.webContents.openDevTools()//正式环境用要去掉
     upgradeHandle(win) //检测版本更新
     
   }
