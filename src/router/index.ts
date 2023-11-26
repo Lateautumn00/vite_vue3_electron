@@ -1,7 +1,6 @@
 import {
     createRouter,
-    createWebHashHistory,
-    createWebHistory,
+    createWebHashHistory, 
     RouteRecordRaw
   } from 'vue-router'
   const routes: Array<RouteRecordRaw> = [
@@ -22,11 +21,8 @@ import {
   ]
   
   const router = createRouter({
-    // history: createWebHistory(process.env.BASE_URL),
-    history: process.env.IS_ELECTRON
-      ? createWebHashHistory(process.env.BASE_URL)
-      : createWebHistory(process.env.BASE_URL), //解决打包后白屏
-    routes
+     history: createWebHashHistory(),
+     routes
   })
   
   export default router
