@@ -14,6 +14,11 @@ const isUpgrade: boolean = import.meta.env.VITE_MODEL === 'production' && import
 		</template>
 	</Suspense>
 </template>
+<style>
+body {
+	-webkit-app-region: drag;
+}
+</style>
 <style scoped lang="scss">
 .logo {
 	height: 6em;
