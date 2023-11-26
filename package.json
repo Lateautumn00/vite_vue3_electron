@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "element-plus": "^2.4.2",
     "vue": "^3.3.8"
   },
   "devDependencies": {
@@ -31,7 +33,6 @@
     "directories": {
       "output": "build/"
     },
-    
     "mac": {
       "artifactName": "${productName}_${version}.${ext}",
       "target": [
@@ -39,7 +40,7 @@
       ]
     },
     "win": {
-      "icon":"public/icon.ico",
+      "icon": "public/icon.ico",
       "target": [
         {
           "target": "nsis",
