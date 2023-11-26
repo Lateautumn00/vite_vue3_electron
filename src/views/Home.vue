@@ -10,6 +10,9 @@
   console.log(r)
   </script>
   <style scoped lang="scss">
+  .common-layout{
+    font-size: $font-size-normal;
+  }
   .el-header {
     -webkit-app-region: drag; /**实现拖拽窗口 */
     --el-header-height: 50px;

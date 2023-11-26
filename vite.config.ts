@@ -32,5 +32,12 @@ export default defineConfig({
       }
     ]
   },
-  
+  //全局引入css
+  css:{
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/styles/globalVar.scss";`
+      }
+    }
+  }
 })
