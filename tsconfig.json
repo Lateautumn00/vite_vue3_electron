@@ -26,6 +26,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue","typings/*.d.ts","electron/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue","typings/**/*.d.ts","electron/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

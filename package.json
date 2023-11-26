@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "vite-vue3-electron",
   "private": true,
   "version": "0.0.1",
   "main": "dist-electron/main.js",
