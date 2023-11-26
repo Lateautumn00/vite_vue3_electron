@@ -1,21 +1,22 @@
 <script setup lang="ts">
-//import HelloWorld from './components/HelloWorld.vue'
+import UpgradeComponent from '@/components/Upgrade.vue'
+const isUpgrade:boolean=
+      import.meta.env.VITE_MODEL === 'production' &&
+      import.meta.env.VUE_APP_UPLOAD !== ''
 </script>
-
 <template>
   <router-view></router-view>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <!--异步组件-->
+  <Suspense v-if="isUpgrade">
+      <template #default>
+        <UpgradeComponent />
+      </template>
+      <template #fallback>
+        <h1>检查更新 ...</h1>
+      </template>
+    </Suspense>
 </template>
-
-<style scoped>
+<style scoped lang="scss">
 .logo {
   height: 6em;
   padding: 1.5em;

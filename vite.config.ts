@@ -6,7 +6,7 @@ import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   envDir: "./viteEnv",
-  envPrefix: ["VITE", "VENUS"], //这个时候，我们可以将VITE_、VENUS_开头的变量统统透传给客户端
+  envPrefix: ["VITE", "VUE"], //这个时候，我们可以将VITE_、VUE_开头的变量统统透传给客户端
   server: {
     port: 8888,
     cors: true, // 允许跨域
